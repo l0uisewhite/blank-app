@@ -6,6 +6,7 @@ import json
 from google.oauth2 import service_account
 import datetime
 
+st.set_page_config(layout="centered")
 st.sidebar.title("Navigation")
 page = st.sidebar.radio(
             "Go to", 
