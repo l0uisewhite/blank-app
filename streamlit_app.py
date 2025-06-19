@@ -121,17 +121,17 @@ elif page == "Leaderboard":
     
     # Display leaderboard
     st.subheader("Current Rankings")
-    col1, col2 = st.columns(2)
+    # col1, col2 = st.columns(2)
     
-    with col1:
-        st.markdown("**Rank**")
-        for i in range(len(sorted_scores)):
-            st.write(f"{i+1}.")
+    # with col1:
+    #     st.markdown("**Rank**")
+    #     for i in range(len(sorted_scores)):
+    #         st.write(f"{i+1}.")
     
-    with col2:
-        st.markdown("**Player | Total Score**")
-        for name, total in sorted_scores:
-            st.write(f"{name} | {total}")
+    # with col2:
+    st.markdown("**Player | Total Score**")
+    for name, total in sorted_scores:
+        st.write(f"{name} | {total}")
             
     if len(sorted_scores) > 0:
         winner, winning_score = sorted_scores[0]
